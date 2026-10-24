@@ -1,0 +1,15 @@
+{
+  "name": "claude-kawa",
+  "owner": {
+    "name": "him0"
+  },
+  "metadata": {
+    "description": "Claude Code の右パネルに川のライブカメラ画像を表示する mod"
+  },
+  "plugins": [
+    {
+      "name": "kawa",
+      "source": "./"
+    }
+  ]
+}

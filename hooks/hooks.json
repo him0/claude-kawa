@@ -1,0 +1,4 @@
+{
+  "description": "/kawa コマンドと、その Pane に Raster でカメラ画像を描く",
+  "modules": ["./register.tsx"]
+}

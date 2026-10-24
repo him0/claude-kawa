@@ -1,0 +1,37 @@
+{
+  "name": "kawa",
+  "version": "0.4.0",
+  "description": "/kawa で川のライブカメラ画像の右パネルを開閉する",
+  "author": {
+    "name": "him0"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/him0/claude-kawa",
+  "userConfig": {
+    "url": {
+      "type": "string",
+      "title": "画像 URL",
+      "description": "表示する JPEG の URL",
+      "default": "https://cam.wni.co.jp/taikobashi/camera.jpg"
+    },
+    "refreshSec": {
+      "type": "number",
+      "title": "更新間隔 (秒)",
+      "description": "パネルを開いている間、この間隔で画像を取り直す。0 で更新しない",
+      "min": 0,
+      "max": 3600,
+      "default": 60
+    },
+    "render": {
+      "type": "string",
+      "title": "描画方式",
+      "description": "auto: 画像を描ける端末 (iTerm2 3.5+ のフルスクリーン描画・kitty・Ghostty) では Image、それ以外は四分ブロックの Raster。image / raster で固定",
+      "options": [
+        "auto",
+        "image",
+        "raster"
+      ],
+      "default": "auto"
+    }
+  }
+}
